@@ -1,0 +1,152 @@
+This dataset began from the original accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. 
+The average value of each meansurement for each subject and each activity is calculated.
+
+These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they 
+were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 
+20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration
+signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency
+of 0.3 Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals
+(tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated 
+using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ,
+fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag.
+(Note the 'f' to indicate frequency domain signals)
+
+These signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+Below is a complete list of all the variables:
+
+1. id:         identifier of each subject, range from 1 to 30 ( a total of 30 person participated)
+2. activity:   6 different activities were recorded for each subject, including:
+            walking; walking upstairs; walking downstairs; sitting; standing; laying;
+
+3. tBodyAcc-mean-X:  the avrage value of the body acceleration in X direction for the subject for this activity
+4. tBodyAcc-mean-Y:  the avrage value of the body acceleration in Y direction for the subject for this activity
+5. tBodyAcc-mean-Z:  the avrage value of the body acceleration in Z direction for the subject for this activity
+6. tGravityAcc-mean-X:  the avrage value of the gravity acceleration in X direction for the subject for this activity 
+7. tGravityAcc-mean-Y:  the avrage value of the gravity acceleration in Y direction for the subject for this activity   
+8. tGravityAcc-mean-Z:  the avrage value of the gravity acceleration in Z direction for the subject for this activity 
+9. tBodyAccJerk-mean-X: the average value of the Jerk signal of body acceleration in X direction for each subject and activity
+10.tBodyAccJerk-mean-Y: the average value of the Jerk signal of body acceleration in Y direction for each subject and activity
+11.tBodyAccJerk-mean-Z: the average value of the Jerk signal of body acceleration in Z direction for each subject and activity
+12.tBodyGyro-mean-X: the average value of the body angular acceleration in X direction for each subject and activity
+13.tBodyGyro-mean-Y: the average value of the body angular acceleration in Y direction for each subject and activity
+14.tBodyGyro-mean-Z: the average value of the body angular acceleration in Z direction for each subject and activity
+15.tBodyGyroJerk-mean-X: the average value of the Jerk signal of body angular acceleration in X direction for each subject and activity
+16.tBodyGyroJerk-mean-Y: the average value of the Jerk signal of body angular acceleration in Y direction for each subject and activity
+17.tBodyGyroJerk-mean-Z: the average value of the Jerk signal of body angular acceleration in Z direction for each subject and activity
+18.tBodyAccMag-mean: the average value of the 3-dimension magnitude of body acceleration for each subject and activity
+19.tGravityAccMag-mean: the average value of the 3-dimension magnitude of gravity acceleration for each subject and activity
+20.tBodyAccJerkMag-mean: the average value of the 3-dimension magnitude of the Jerk signal of body acceleration for each subject and activity
+21.tBodyGyroMag-mean: the average value of the 3-dimension magnitude of body angular acceleration for each subject and activity
+22.tBodyGyroJerkMag-mean: the average value of the 3-dimension magnitude of the Jerk signal of body angular acceleration for each subject and activity
+23. fBodyAcc-mean-X:  the avrage value of frequency domain signal of the body acceleration in X direction for the subject for this activity
+24. fBodyAcc-mean-Y:  the avrage value of frequency domain signal of the body acceleration in Y direction for the subject for this activity
+25. fBodyAcc-mean-Z:  the avrage value of frequency domain signal of the body acceleration in Z direction for the subject for this activity
+26. fBodyAcc-meanFreq-X:  the avrage frequency of the body acceleration in X direction for the subject for this activity
+27. fBodyAcc-meanFreq-Y:  the avrage frequency of the body acceleration in Y direction for the subject for this activity
+28. fBodyAcc-meanFreq-Z:  the avrage frequency of the body acceleration in Z direction for the subject for this activity
+29. fBodyAccJerk-mean-X:  the avrage value of the frequency domain Jerk signal of the body acceleration in X direction for the subject for this activity
+30. fBodyAccJerk-mean-Y:  the avrage value of the frequency domain Jerk signal of the body acceleration in Y direction for the subject for this activity
+31. fBodyAccJerk-mean-Z:  the avrage value of the frequency domain Jerk signal of the body acceleration in Z direction for the subject for this activity
+32. fBodyAccJerk-meanFreq-X:  the avrage frequency of the Jerk signal of body acceleration in X direction 
+33. fBodyAccJerk-meanFreq-Y:  the avrage frequency of the Jerk signal of body acceleration in Y direction 
+34. fBodyAccJerk-meanFreq-Z:  the avrage frequency of the Jerk signal of body acceleration in Z direction 
+35. fBodyGyro-mean-X: the average frequency domain signal of the body angular acceleration in X direction 
+36. fBodyGyro-mean-Y: the average frequency domain signal of the body angular acceleration in Y direction 
+37. fBodyGyro-mean-Z: the average frequency domain signal of the body angular acceleration in Z direction 
+38. fBodyGyro-meanFreq-X:  the avrage frequency of the body angular acceleration in X direction 
+39. fBodyGyro-meanFreq-Y:  the avrage frequency of the body angular acceleration in Y direction
+40. fBodyGyro-meanFreq-Z:  the avrage frequency of the body angular acceleration in Z direction  
+41. fBodyAccMag-mean: the average of the 3-dimension magnitude of frequency domain body acceleration 
+42. fBodyAccMag-meanFreq: the average freuqncy of the 3-dimension magnitude of body acceleration
+43. fBodyAccJerkMag-mean: the average value of the 3-dimension magnitude of the Jerk signal of body acceleration
+44. fBodyAccJerkMag-meanFreq: the average frequency of the 3-dimension magnitude of the Jerk signal of body acceleration
+45. fBodyBodyGyroMag-mean: the average value of the 3-dimension magnitude of frequency domain signal of body acceleration 
+46. fBodyBodyGyroMag-meanFreq: the average frequency of the 3-dimension magnitude of frequency domain signal of body acceleration 
+47. fBodyBodyGyroJerkMag-mean: the average value of the 3-dimension magnitude of frequency domain Jerk signal of body angular acceleration 
+48. fBodyBodyGyroJerkMag-meanFreq: the average frequency of the 3-dimension magnitude of frequency domain signal of body acceleration 
+49. tBodyAcc-std-X:  the standard deviation of the body acceleration in X direction
+50. tBodyAcc-std-Y:  the standard deviation of the body acceleration in Y direction
+51. tBodyAcc-std-Z:  the standard deviation of the body acceleration in Z direction
+52. tGravityAcc-std-X:  the standard deviation of the gravity acceleration in X direction
+53. tGravityAcc-std-Y:  the standard deviation of the gravity acceleration in Y direction
+54. tGravityAcc-std-Z:  the standard deviation of the gravity acceleration in Z direction
+55. tBodyAccJerk-std-X:  the standard deviation of the Jerk signal of body acceleration in X direction
+56. tBodyAccJerk-std-Y:  the standard deviation of the Jerk signal of body acceleration in Y direction
+57. tBodyAccJerk-std-Z:  the standard deviation of the Jerk signal of body acceleration in Z direction
+58. tBodyGyro-std-X:  the standard deviation of the body angular acceleration in X direction
+59. tBodyGyro-std-Y:  the standard deviation of the body angular acceleration in Y direction
+60. tBodyGyro-std-Z:  the standard deviation of the body angular acceleration in Z direction
+61. tBodyGyroJerk-std-X:  the standard deviation of the Jerk signal of body angular acceleration in X direction
+62. tBodyGyroJerk-std-Y:  the standard deviation of the Jerk signal of body angular acceleration in Y direction
+63. tBodyGyroJerk-std-Z:  the standard deviation of the Jerk signal of body angular acceleration in Z direction
+64. tBodyAccMag_std:  the standard deviation of 3-dimensional magnitude of the body acceleration
+65. tGravityAccMag-std:  the standard deviation of 3-dimensional magnitude of the gravity acceleration 
+66. tBodyAccJerkMag-std:  the standard deviation of 3-dimensional magnitude of the jerk signal of body acceleration 
+67. tBodyGyroMag-std:  the standard deviation of 3-dimensional magnitude of body angular acceleration 
+68. tBodyGyroJerkMag-std:  the standard deviation of 3-dimensional magnitude of the jerk signal of body angular acceleration  
+69. fBodyAcc-std-X:  the standard deviation in frequency domain of body acceleration in X direction 
+70. fBodyAcc-std-Y:  the standard deviation in frequency domain of body acceleration in Y direction 
+71. fBodyAcc-std-Z:  the standard deviation in frequency domain of body acceleration in Z direction 
+72. fBodyAccJerk-std-X:  the standard deviation in frequency domain of the Jerk signal of body acceleration in X direction 
+73. fBodyAccJerk-std-Y:  the standard deviation in frequency domain of the Jerk signal of body acceleration in Y direction 
+74. fBodyAccJerk-std-Z:  the standard deviation in frequency domain of the Jerk signal of body acceleration in Z direction 
+75. fBodyGyro-std-X:  the standard deviation in frequency domain of body angular acceleration in X direction 
+76. fBodyGyro-std-Y:  the standard deviation in frequency domain of body angular acceleration in Y direction 
+77. fBodyGyro-std-Z:  the standard deviation in frequency domain of body angular acceleration in Z direction 
+78. fBodyAccMag-std:  the standard deviation of 3-dimensional magnitude of the frequency domain of body acceleration 
+79. fBodyBodyAccJerkMag-std:  the standard deviation of 3-dimensional magnitude of the frequency domain jerk signal of body acceleration 
+80. fBodyBodyGyroMag-std:  the standard deviation of 3-dimensional magnitude of the frequency domain of body angular acceleration 
+81. fBodyBodyGyroJerkMag-std:  the standard deviation of 3-dimensional magnitude of the frequency domain jerk signal of body angular acceleration 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+tBodyAcc
+tGravityAcc-XYZ
+tBodyAccJerk-XYZ
+tBodyGyro-XYZ
+tBodyGyroJerk-XYZ
+tBodyAccMag
+tGravityAccMag
+tBodyAccJerkMag
+tBodyGyroMag
+tBodyGyroJerkMag
+fBodyAcc-XYZ
+fBodyAccJerk-XYZ
+fBodyGyro-XYZ
+fBodyAccMag
+fBodyAccJerkMag
+fBodyGyroMag
+fBodyGyroJerkMag
+
+The set of variables that were estimated from these signals are: 
+
+mean(): Mean value
+std(): Standard deviation
+meanFreq(): Weighted average of the frequency components to obtain a mean frequency
+
+Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle()
+variable:
+
+gravityMean
+tBodyAccMean
+tBodyAccJerkMean
+tBodyGyroMean
+tBodyGyroJerkMean
